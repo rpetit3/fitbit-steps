@@ -6,7 +6,7 @@
     count. That's it!
 '''
 import argparse as ap
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 
 import fitbit
 
