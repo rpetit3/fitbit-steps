@@ -6,6 +6,7 @@
     count. That's it!
 '''
 import argparse as ap
+import pytz
 from datetime import date, datetime, timedelta
 
 import fitbit
@@ -36,7 +37,7 @@ if __name__ == '__main__':
     
     if args.date != date.today():
         if args.date == 'yesterday':
-            args.date = date.today() - timedelta(1)
+            args.date = datetime.now(pytz.timezone('US/Eastern')) - timedelta(1)
         else:
             args.date = datetime.strptime(args.date, "%Y-%m-%d")
 
