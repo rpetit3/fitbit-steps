@@ -1,1 +1,1 @@
-Makes use of the [python-fitbit](https://github.com/orcasgit/python-fitbit) library, to retrieve steps from FitBit for a certain date.
+Query FitBit via [python-fitbit](https://github.com/orcasgit/python-fitbit), to retrieve steps from a certain date.
