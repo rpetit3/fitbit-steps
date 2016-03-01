@@ -42,5 +42,7 @@ if __name__ == '__main__':
             args.date = datetime.strptime(args.date, "%Y-%m-%d")
 
     stats = auth_client.activities(date=args.date)
-
-    print stats['summary']['steps']
+    if stats['summary']['steps']:
+        print stats['summary']['steps']
+    else: 
+        print '0'
