@@ -43,6 +43,6 @@ if __name__ == '__main__':
 
     stats = auth_client.activities(date=args.date)
     if stats['summary']['steps']:
-        print stats['summary']['steps']
+        print(stats['summary']['steps'])
     else: 
-        print '0'
+        print('0')
